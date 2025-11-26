@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
               foregroundColor: Colors.white,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10)
-              )
+              ),
           ),),
       ),
       home:Home(),

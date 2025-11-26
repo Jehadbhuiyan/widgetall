@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:widgetpracticeall/All%20Widget/Divider.dart';
 import 'package:widgetpracticeall/All%20Widget/Stepper.dart';
-
 import 'All Widget/ExpansionTile.dart';
+import 'All Widget/TextField.dart';
+import 'All Widget/flatingAction.dart';
+import 'All Widget/girdView.dart';
+import 'All Widget/listTile.dart';
+import 'All Widget/progressbar indicator.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -33,6 +38,30 @@ class _HomeState extends State<Home> {
               ElevatedButton(onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>Expansiontile()));
               }, child: Text('Exprasion Tile')),
+              SizedBox(height: 10),
+              ElevatedButton(onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Textfield()));
+              }, child: Text('TextField')),
+              SizedBox(height: 10),
+              ElevatedButton(onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>divider()));
+              }, child: Text('Divider')),
+              SizedBox(height: 10),
+              ElevatedButton(onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Listtile()));
+              }, child: Text('ListTile')),
+              SizedBox(height: 10),
+              ElevatedButton(onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Flatingaction()));
+              }, child: Text('FloatingAction')),
+              SizedBox(height: 10),
+              ElevatedButton(onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Girdview()));
+              }, child: Text('GridView')),
+              SizedBox(height: 10),
+              ElevatedButton(onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Progressbar()));
+              }, child: Text('CircularProgressBar')),
             ],
           ),
         ),

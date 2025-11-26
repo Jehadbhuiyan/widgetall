@@ -13,9 +13,6 @@ class _ExpansiontileState extends State<Expansiontile> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Expansiontile'),
-        backgroundColor: Colors.blue,
-        foregroundColor: Colors.white,
-        centerTitle: true,
       ),
       body: Column(
         children: [

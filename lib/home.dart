@@ -6,6 +6,7 @@ import 'All Widget/Snackbar.dart';
 import 'All Widget/TextField.dart';
 import 'All Widget/aleartDialog.dart';
 import 'All Widget/bottomSheet.dart';
+import 'All Widget/card.dart';
 import 'All Widget/chekbox.dart';
 import 'All Widget/flatingAction.dart';
 import 'All Widget/girdView.dart';
@@ -87,6 +88,10 @@ class _HomeState extends State<Home> {
               ElevatedButton(onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>Chekbox()));
               }, child: Text('Check Box')),
+              SizedBox(height: 10),
+              ElevatedButton(onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>card()));
+              }, child: Text('Card')),
             ],
 
           ),

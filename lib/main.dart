@@ -25,6 +25,11 @@ class MyApp extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10)
               ),
           ),),
+       appBarTheme: AppBarTheme(
+         backgroundColor: Colors.blue,
+         foregroundColor: Colors.white,
+         centerTitle: true,
+       )
       ),
       home:Home(),
     );
